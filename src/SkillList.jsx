@@ -3,6 +3,6 @@ export default function SkillList({ skills }) {
   //app logic goes here
 
   //return UI as JSX
-  const skillListItems = skills.map((s) => <SkillListItem skill={s} />);
+  const skillListItems = skills.map((s,idx) => <SkillListItem skill={s} key={idx} />);
   return <ul>{skillListItems}</ul>;
 }
